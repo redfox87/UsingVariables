@@ -17,16 +17,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
-    // Declare two variables CGFloat height;
     CGFloat weight;
     CGFloat height;
-    // Store a value in each variable height = 71.0f;
     weight = 185.0f;
     height = 71.0f;
-    // We'll calculate the body mass index
     CGFloat bodyMassIndex = (weight / (height * height)) * 703;
-    // Log that to the console NSLog(@"%f",bodyMassIndex)
-    NSLog(@"%f",bodyMassIndex);
+    NSLog(@"%.2f",bodyMassIndex);
     return YES;
 }
 
